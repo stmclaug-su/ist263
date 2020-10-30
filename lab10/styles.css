@@ -1,6 +1,7 @@
 body {
     background-color: #e3d9ca;
-    color: #403f48
+    color: #403f48;
+    font-family: 'Times New Roman', Times, serif;
 }
 a {
     color: #9c5b05;
@@ -49,3 +50,14 @@ div {margin: 20px}
     span {display: none;}
     .map {margin: 10px;}
 }
+#skip-to-content {
+    position: absolute; 
+    left: -999px;  /* positions skip to content off screen */
+    background-color: white;
+    border: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+#skip-to-content:focus {position: absolute; left: 10px;}
