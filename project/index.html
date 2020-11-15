@@ -3,14 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <img src="media/skpb_banner.png" alt="group photo banner" class="banner">
         <nav>
-            <a href="index.html">Home</a> | <a href="news.html">News</a> | <a href="setofthemonth.html">Music</a> | <a href="admin.html">Administration</a> | <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a> <span>|</span> <a href="news.html">News</a> <span>|</span> <a href="setofthemonth.html">Music</a> <span>|</span> <a href="admin.html">Administration</a> <span>|</span> <a href="contact.html">Contact</a>
         </nav>
+        <hr>
         <h1>Syracuse Kiltie Pipe Band</h1>
         <h2>Member Resources</h2>
         Welcome to the Syracuse Kiltie Pipe Band Members Only site.  Everything you need can be found below:
+        <div class="container">
         <section>
             <h3>News &amp; events</h3>
             <ul>
@@ -37,6 +41,7 @@
                 <li>Drum Scores</li>
             </ul>
         </section>
+        
         <section>
             <h3>Administrative Resources</h3>
             <ul>
@@ -56,18 +61,32 @@
                 <li>Contact the Executive Committe</li>
             </ul>
         </section>
-        If you can't find what you need, use the <a href="contact.html">contact page</a> or fill out the form below:<br><br>
-        <form action="mailto:syracusekilties@gmail.com" method="POST">
-            <label for="textline"><strong> Name:</strong></label>
-            <input type="text" id="textline" name="member_name"><br><br>
-            <label for="commentbox"><strong>Leave a comment here:</strong></label>
-            <br><br>
-            <textarea id="commentbox" name="comment_text" placeholder="What's on your mind?" rows="5" cols="40"></textarea><br><br>
-            <input type="submit" value="Send">
-        </form>>
+        </div>       
+        
+            If you can't find what you need, head to the contact page or fill out the form below:<br><br>
+            
+            <div class="form">
+                <div>
+                    <form action="mailto:syracusekilties@gmail.com" method="POST">
+                        <label for="textline"><strong> Name:</strong></label>
+                        <input type="text" id="textline" name="member_name"><br><br>
+                        <label for="commentbox"><strong>Leave a comment here:</strong></label>
+                        <br><br>
+                        <textarea id="commentbox" name="comment_text" placeholder="What's on your mind?" rows="5" cols="40"></textarea><br><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            
         <footer>
-            &copy; 2020 Syracuse Kiltie Pipe Band  <em>"Life is one grand, sweet song, so start the music" &mdash; Robert Burns</em>            
+            <hr>
+            &copy; 2020 Syracuse Kiltie Pipe Band  <div class="quote"><em>"Life is one grand, sweet song, so start the music" &mdash; Robert Burns</em></div>
         </footer>
     </body>
     
 </html>
+<!--TO DO:
+hamburger nav
+small icon?
+a11y
+-->

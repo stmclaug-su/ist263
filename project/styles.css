@@ -1,0 +1,45 @@
+body {
+    background-color: #80A037;
+    text-align: center;
+}
+nav {
+    background-color: darkkhaki;
+}
+footer {
+    text-align: start;
+}
+ul {text-align: start;}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+}
+ .form {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkkhaki;
+    border-radius: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+
+section {
+    background-color: darkkhaki;
+    border-radius: 1em;
+    padding: 10px;
+    margin: 10px;
+}
+.quote {
+    float: right;
+}
+
+.banner {
+    max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    nav a {display: block; width: 100%; margin-top: 10px; margin-bottom: 10px;}
+    span {display: none;}
+}
