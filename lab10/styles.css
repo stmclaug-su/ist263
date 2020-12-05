@@ -7,6 +7,7 @@ a {
     color: #965706;
 }
 h1, h2 {
+    font-family: 'Playfair Display SC', serif;
     color: #2e4404;
 }
 nav {
@@ -61,3 +62,4 @@ div {margin: 20px}
     padding-right: 10px;
     }
 #skip-to-content:focus {position: absolute; left: 10px;}
+
