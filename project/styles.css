@@ -1,10 +1,11 @@
 body {
-    background-color: #80A037;
+    background-color: #6fa037;
     text-align: center;
 }
 nav {
     background-color: darkkhaki;
 }
+#menuicon {display: none;}
 footer {
     text-align: start;
 }
@@ -20,11 +21,14 @@ ul {text-align: start;}
 }
  .form {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     background-color: darkkhaki;
     border-radius: 1em;
     padding-top: 10px;
     padding-bottom: 10px;
+    max-width: 400px;
+    margin: 0 auto;
 } 
 
 section {
@@ -45,6 +49,8 @@ section {
     span {display: none;}
     .cal {display: none;}
     .calsmall {display: inline; align-content: center;}
+    #menuicon {display: block;}
+    #navlinks {display: none;}
 }
 #newstop {
     display: flex;
@@ -67,7 +73,7 @@ section figure img {
     padding-top: 56.25%; 
   }
 
-  .responsive {
+.responsive {
     position: absolute;
     top: 0;
     left: 0;

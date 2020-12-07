@@ -7,10 +7,24 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
+    <script>
+        function navToggle() {
+            if (document.getElementById('navlinks').style.getPropertyValue('display') == 'block') {
+                document.getElementById('navlinks').style.display = 'none';
+            }
+            else {
+             document.getElementById('navlinks').style.display = 'block'; 
+             }
+        }
+
+    </script>
     <body>
-        <img src="media/skpb_banner.png" alt="group photo banner" class="banner">
+        <img src="media/skpb_banner.png" alt="group photo banner" class="banner" >
         <nav>
-            <a href="index.html">Home</a> <span>|</span> <a href="news.html">News</a> <span>|</span> <a href="setofthemonth.html">Music</a> <span>|</span> <a href="admin.html">Administration</a> <span>|</span> <a href="contact.html">Contact</a>
+            <img src="media/burger.png" alt="menu icon" id="menuicon" onclick="navToggle();">
+            <div id="navlinks">
+                <a href="index.html">Home</a> <span>|</span> <a href="news.html">News</a> <span>|</span> <a href="setofthemonth.html">Music</a> <span>|</span> <a href="admin.html">Administration</a> <span>|</span> <a href="contact.html">Contact</a>
+            </div>
         </nav>
         <hr>
         <h1>Syracuse Kiltie Pipe Band</h1>
