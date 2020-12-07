@@ -7,10 +7,26 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
+    <script>
+        function navToggle() {
+            if (document.getElementById('navlinks').style.getPropertyValue('display') == 'block') {
+                document.getElementById('navlinks').style.display = 'none';
+            }
+            else {
+             document.getElementById('navlinks').style.display = 'block'; 
+             }
+        }
+
+    </script>
     <body>
+        <img src="media/skpb_banner.png" alt="group photo banner" class="banner" >
         <nav>
-            <a href="index.html">Home</a> <span>|</span> <a href="news.html">News</a> <span>|</span> <a href="setofthemonth.html">Music</a> <span>|</span> <a href="admin.html">Administration</a> <span>|</span> <a href="contact.html">Contact</a>
+            <img src="media/burger.png" alt="menu icon" id="menuicon" onclick="navToggle();">
+            <div id="navlinks">
+                <a href="index.html">Home</a> <span>|</span> <a href="news.html">News</a> <span>|</span> <a href="setofthemonth.html">Music</a> <span>|</span> <a href="admin.html">Administration</a> <span>|</span> <a href="contact.html">Contact</a>
+            </div>
         </nav>
+        <hr>
         <h1>News &amp; Events</h1>
         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=c3lyYWN1c2Uua2lsdGllc0BnbWFpbC5jb20&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;color=%237CB342&amp;showTabs=0&amp;showPrint=0" style="border:solid 1px #777" width="400" height="500" frameborder="0" scrolling="no" class="calsmall"></iframe>
         <iframe src="https://calendar.google.com/calendar/embed?src=syracuse.kilties%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" class="cal" ></iframe>
@@ -35,18 +51,24 @@
         <section>
             <h2>Featured Photos</h2>
             <figure>
-                <img src="media/parade_marching.jpg" alt="full band marching in parade">
-                <figcaption>Drum Major S. Olney leads the Kilties down Salina Street</figcaption>
+                <a href="media/parade_marching.jpg" target="_blank">
+                    <img src="media/parade_marching.jpg" alt="full band marching in parade">
+                    <figcaption>Drum Major S. Olney leads the Kilties down Salina Street</figcaption>
+                </a>
             </figure>
             <figure>
-                <img src="media/marching_2.jpg" alt="band marching in summer uniforms">
-                <figcaption>Memorial Day in Camillus</figcaption>
+                <a href="media/marching_2.jpg" target="_blank">
+                    <img src="media/marching_2.jpg" alt="band marching in summer uniforms">
+                    <figcaption>Memorial Day in Camillus</figcaption>
+                </a>
             </figure>
             <figure>
-                <img src="media/xmas.jpg" alt="two pipers chatting in ugly sweaters">
-                <figcaption>Joe and Steve solve all the problems</figcaption>
+                <a href="media/xmas.jpg" target="_blank">
+                    <img src="media/xmas.jpg" alt="two pipers chatting in ugly sweaters">
+                    <figcaption>Joe and Steve solve all the problems</figcaption>
+                </a>
             </figure>
-            Photo Gallery (link)
+            
         </section>
         <footer>
             <hr>
