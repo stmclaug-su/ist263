@@ -6,10 +6,26 @@
         <title>Administration</title>
         <link rel="stylesheet" href="styles.css">
     </head>
+    <script>
+        function navToggle() {
+            if (document.getElementById('navlinks').style.getPropertyValue('display') == 'block') {
+                document.getElementById('navlinks').style.display = 'none';
+            }
+            else {
+             document.getElementById('navlinks').style.display = 'block'; 
+             }
+        }
+
+    </script>
     <body>
+        <img src="media/skpb_banner.png" alt="group photo banner" class="banner" >
         <nav>
-            <a href="index.html">Home</a> | <a href="news.html">News</a> | <a href="setofthemonth.html">Music</a> | <a href="admin.html">Administration</a> | <a href="contact.html">Contact</a>
+            <img src="media/burger.png" alt="menu icon" id="menuicon" onclick="navToggle();">
+            <div id="navlinks">
+                <a href="index.html">Home</a> <span>|</span> <a href="news.html">News</a> <span>|</span> <a href="setofthemonth.html">Music</a> <span>|</span> <a href="admin.html">Administration</a> <span>|</span> <a href="contact.html">Contact</a>
+            </div>
         </nav>
+        <h1>This page coming soon</h1>
 
     </body>
 </html>
